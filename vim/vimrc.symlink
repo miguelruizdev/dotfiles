@@ -1,1 +1,6 @@
-/Users/miguelruiz/.vimrc
+syntax on
+set number
+set tabstop=4
+set ls=2
+set hlsearch
+set autoindent
