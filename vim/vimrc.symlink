@@ -1,10 +1,32 @@
+
+" Maintained by Miguel Ruiz <miguel.ruiz.dev@gmail.com>
+
+
+" Use vim settings, rather then vi settings (much better!)
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+" General config
 syntax on
-set number " show line numbers
 set ls=2
-set hlsearch
-set autoindent "when Enter is pressed at the end of your text, vim will automatically indent the next new line to match the indent of the previous one.
+set autoindent  " When Enter is pressed at the end of your text, vim will automatically indent the next new line to match the indent of the previous one.
+set copyindent    " copy the previous indentation on autoindenting
+set title       " Change the terminal's title
+set history=1000        " Remember more commands and search history
+set undolevels=1000     " Use many levels of undo
+set nowrap        " don't wrap lines
 
 
+
+" Search
+set ignorecase    " ignore case when searching
+set hlsearch      " highlight all search hits
+set smartcase     " ignore case if search pattern is all lowercase, case-sensitive otherwise
+
+
+" Numbers
+set number
+set numberwidth=5
 
 
 " TAB CONFIGURATION - ONE-LINER: set shiftwidth=2 expandtab smarttab
@@ -15,3 +37,10 @@ set smarttab "make the tab key insert spaces or tabs to go to the next indent of
 " show tabs as characters - set defensively to avoid typing tabs - useful for yaml editing
 set list
 set listchars=tab:>-
+
+" Display extra whitespace as dots
+set list listchars=tab:»·,trail:·,nbsp:·
+
+" No backups, use Git!
+set nobackup
+set noswapfile
