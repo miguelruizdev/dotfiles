@@ -16,3 +16,4 @@ To be covered:
 - zsh
 - iterm2
 
+Based on: https://github.com/mscoutermarsh/dotfiles
