@@ -1,8 +1,8 @@
-.**DOTFILES**
-A systems colonizer
-Guarantor of machine independence
+# **.DOTFILES**
 
-Repo for storing local configuration of common dev tools
+Repo for storing local configuration of common dev tools.
+
+Easy colonizing of new machines by externalizing config file location.
 
 To symlink with actual files under home directory when migrating across systems:
 	
